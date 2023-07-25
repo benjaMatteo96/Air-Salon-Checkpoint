@@ -1,0 +1,170 @@
+:root {
+  --primary: #e4bc95;
+}
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 20vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+header>p {
+  font-size: .8rem;
+}
+
+nav{
+  min-height: 5vh;
+  background-color: black;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main{
+  min-height: 60vh;
+}
+
+.primary-section-container {
+  display:flex;
+  justify-content: center;
+  margin: 2rem;
+  
+}
+
+.primary-section{
+  width: 15rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 1rem;
+}
+
+.primary-section h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.primary-section p {
+  font-size: .7rem;
+  text-align: center;
+}
+
+.primary-section h2, p {
+  padding: .5rem .5rem .2rem .5rem;
+}
+
+.primary-section img {
+  width: 100%;
+}
+
+.secondary-section-container {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.secondary-section ul {
+  padding: .5rem;
+  font-size: .8rem;
+}
+
+.secondary-section table,td,th {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 0.2rem;
+}
+.secondary-section td {
+  font-size: .8rem;
+}
+
+.secondary-section h2 {
+  font-size: 1.1rem;
+  padding: .5rem;
+}
+
+footer {
+  min-height: 15vh;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+fieldset {
+  padding: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 320px) and (max-width:767px){
+
+    nav {
+      flex-direction: column;
+    }
+
+    .primary-section-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .primary-section {
+      width: 100%;
+      margin: 0;
+    }
+
+    .primary-section p {
+      padding-bottom: 1rem;
+    }
+
+    .secondary-section-container{
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .secondary-section-container table,td,th, h2, .ul-container {
+      padding: 1rem;
+      text-align: center;
+      /* margin: 0.4rem; */
+    }
+
+    .ul-container li {
+      padding: .4rem;
+      margin-top: 0;
+    }
+
+    footer {
+      flex-direction: column;
+    }
+}
+
+/* Aqui dejo comentado mi estilo responsive para tablet en caso de que se requiera aplicar,
+pero, por el momento y despues de varias pruebas, decidi dejar la vista de tablet, con los mismos estilos aplicados a la vizualizacion de escritorio. */
+
+ /* @media (min-width:768px) and (max-width:1023px) {
+  .primary-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+} */
+
